@@ -4,15 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './Components/home'
 import Add from './Components/Add'
+import Nav from './Components/Nav'
+import {Route, Routes} from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    
-     <Home></Home>
-     <Add></Add>
+    <Nav></Nav>
+   <Routes>
+    <Route path='/' element= {<Home/>}></Route>
+    <Route path='/add' element={<Add/>}></Route>
+
+   </Routes>
     </>
   )
 }
