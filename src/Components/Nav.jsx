@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <><Box sx={{ flexGrow: 1 }}>
-    <AppBar position="static">
+   <AppBar position="static"sx={{ backgroundColor:'#3C3D37' }}>
       <Toolbar>
         <IconButton
           size="large"
@@ -25,8 +25,8 @@ const Nav = () => {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           MY FLIX
         </Typography>
-        <Link to={'/'}><Button  variant='contained' color="secondary">Home</Button></Link>
-        <Link to={'/add'}><Button color="secondary">Add movie</Button></Link>
+        <Link to={'/'}><Button  variant='contained' color="secondary" sx={{ margin:3,backgroundColor:'#000000' }} >Home</Button></Link>
+        <Link to={'/add'}><Button color="secondary" variant='contained' sx={{ backgroundColor:'#000000' }}>Login</Button></Link>
       </Toolbar>
     </AppBar>
   </Box>
